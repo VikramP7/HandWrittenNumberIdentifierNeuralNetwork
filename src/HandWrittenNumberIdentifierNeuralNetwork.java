@@ -85,8 +85,8 @@ public class HandWrittenNumberIdentifierNeuralNetwork {
 		neuralNetwork.SetLearningRate(learningRate);
 
 		// Training
-		neuralNetwork.Train(trainingInputs, trainingTargets, batchSize, itterations,
-				NeuralNetwork.PrintProgress.PRINTPROGRESS);
+		// neuralNetwork.Train(trainingInputs, trainingTargets, batchSize, itterations,
+		// NeuralNetwork.PrintProgress.PRINTPROGRESS);
 
 		// Testing
 		// neuralNetwork.Test(testingInputs, testingTargets,
@@ -104,7 +104,7 @@ public class HandWrittenNumberIdentifierNeuralNetwork {
 				pooUserInput = false;
 				System.out.println("Image Number from 0-9999 (Type \"quit\" to quit): ");
 				String userInStr = scanner.nextLine();
-				if (userInStr.toLowerCase() == "quit") {
+				if (userInStr.toLowerCase().equals("quit")) {
 					lop = false;
 					pooUserInput = false;
 				} else {
