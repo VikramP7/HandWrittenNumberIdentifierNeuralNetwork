@@ -104,7 +104,7 @@ public class HandWrittenNumberIdentifierNeuralNetwork {
 				pooUserInput = false;
 				System.out.println("Image Number from 0-9999 (Type \"quit\" to quit): ");
 				String userInStr = scanner.nextLine();
-				if (userInStr == "quit") {
+				if (userInStr.toLowerCase() == "quit") {
 					lop = false;
 					pooUserInput = false;
 				} else {
