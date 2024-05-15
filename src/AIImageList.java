@@ -1,8 +1,7 @@
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
+import java.io.InputStream;
 import java.nio.ByteBuffer;
-import java.nio.file.Files;
 
 public class AIImageList {
 
@@ -29,17 +28,16 @@ public class AIImageList {
 		labelFileName = labelPath;
 
 		try {
-			URL imgUrl = getClass().getResource(imageFileName);
-			imageFile = new File(imgUrl.getPath());
-			imageFileBytes = Files.readAllBytes(imageFile.toPath());
+			InputStream imgStream = getClass().getResourceAsStream(imageFileName);
+			imageFileBytes = imgStream.readAllBytes();
 			imageWrapped = ByteBuffer.wrap(imageFileBytes);
 
-			URL labelUrl = getClass().getResource(labelFileName);
-			labelFile = new File(labelUrl.getPath());
-			labelFileBytes = Files.readAllBytes(labelFile.toPath());
+			InputStream labelStream = getClass().getResourceAsStream(labelFileName);
+			labelFileBytes = labelStream.readAllBytes();
 			labelWrapped = ByteBuffer.wrap(labelFileBytes);
 		} catch (IOException e) {
 			e.printStackTrace();
+			System.out.println("Failed to open training data!!!");
 		}
 		Initialize();
 	}
