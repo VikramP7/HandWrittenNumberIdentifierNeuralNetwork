@@ -7,8 +7,6 @@ An appication of my feed forward Neural Network Library, identifying hand writte
 <img src ="/img/three3-7.jpg" alt="Image of Handwritten number 3">
 </p>
 
-![Image of handwritten number 3][imgThree]
-
 ## Brief Description
 This is a working example of an application of the fully connected feedforward neural network library I wrote in java.
 
