@@ -3,7 +3,9 @@ Started 2021 Updated 2024
 
 An appication of my feed forward Neural Network Library, identifying hand written numbers using the MNIST dataset.
 
-<img src ="/img/three3-7.jpg" alt="Image of Handwritten number 3" align="center">
+<p align="center">
+<img src ="/img/three3-7.jpg" alt="Image of Handwritten number 3">
+</p>
 
 ![Image of handwritten number 3][imgThree]
 
