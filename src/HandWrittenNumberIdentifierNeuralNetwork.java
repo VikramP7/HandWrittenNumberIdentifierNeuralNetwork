@@ -5,11 +5,11 @@ public class HandWrittenNumberIdentifierNeuralNetwork {
 	public static void main(String[] args) {
 		// import training and testing data from training data folder
 		AIImageList trainingAIImages = new AIImageList(
-				"./TrainingData/train-images.idx3-ubyte",
-				"./TrainingData/train-labels.idx1-ubyte");
+				"/TrainingData/train-images.idx3-ubyte",
+				"/TrainingData/train-labels.idx1-ubyte");
 		AIImageList testAIImages = new AIImageList(
-				"./TrainingData/t10k-images.idx3-ubyte",
-				"./TrainingData/t10k-labels.idx1-ubyte");
+				"/TrainingData/t10k-images.idx3-ubyte",
+				"/TrainingData/t10k-labels.idx1-ubyte");
 
 		// create neural network
 		NeuralNetwork neuralNetwork = new NeuralNetwork(784, new int[] { 32, 16 }, 10);
@@ -54,12 +54,12 @@ public class HandWrittenNumberIdentifierNeuralNetwork {
 
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Welcome to the Hand Written Number Identifier Neural Network!");
-		System.out.println("To begiun training enter the training parameters:");
+		System.out.println("To begin training enter the training parameters:");
 		System.out.println("Enter the Learning rate [float] (default is 3.0): ");
 		String learningRateStr = scanner.nextLine();
 		System.out.println("Enter the Batch Size [int] (default is 25): ");
 		String batchSizeStr = scanner.nextLine();
-		System.out.println("Enter the number of itterations [int] (default is 1): ");
+		System.out.println("Enter the number of iterations [int] (default is 1): ");
 		String itterationsStr = scanner.nextLine();
 
 		int batchSize = 25;
