@@ -41,9 +41,10 @@ public class AIImageList {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		Initialize();
 	}
 
-	public void Initialize() {
+	private void Initialize() {
 		magicNumber = imageWrapped.getInt();
 		numberOfImages = imageWrapped.getInt();
 		width = imageWrapped.getInt();

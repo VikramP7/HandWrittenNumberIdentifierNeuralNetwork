@@ -11,10 +11,6 @@ public class HandWrittenNumberIdentifierNeuralNetwork {
 				"./TrainingData/t10k-images.idx3-ubyte",
 				"./TrainingData/t10k-labels.idx1-ubyte");
 
-		// initialize training and testing data
-		trainingAIImages.Initialize();
-		testAIImages.Initialize();
-
 		// create neural network
 		NeuralNetwork neuralNetwork = new NeuralNetwork(784, new int[] { 32, 16 }, 10);
 
