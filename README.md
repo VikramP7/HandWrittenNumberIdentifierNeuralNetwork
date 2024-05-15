@@ -1,7 +1,7 @@
 # Handwritten Number Identifier Neural Network
 Started 2021 Updated 2024
 
-An application of my feed forward Neural Network Library, identifying handwritten numbers using the MNIST dataset.
+An application of my feed forward [Neural Network Library][linkLibrary], identifying handwritten numbers using the MNIST dataset.
 
 <p align="center">
 <img src ="/img/three3-7.jpg" alt="Image of Handwritten number 3">
@@ -45,3 +45,4 @@ The math report can be found in this repo. It is written as a math report, howev
 [imgTestResult]: /img/test-results.png
 [MNISTlink]: https://www.kaggle.com/datasets/hojjatk/mnist-dataset
 [linkPerceptron]: https://www.youtube.com/watch?v=ntKn5TPHHAk
+[linkLibrary]: https://github.com/VikramP7/NeuralNetworkLibraryV5
