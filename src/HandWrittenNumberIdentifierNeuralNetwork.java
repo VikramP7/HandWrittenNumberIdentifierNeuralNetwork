@@ -85,8 +85,10 @@ public class HandWrittenNumberIdentifierNeuralNetwork {
 		neuralNetwork.SetLearningRate(learningRate);
 
 		// Training
-		// neuralNetwork.Train(trainingInputs, trainingTargets, batchSize, itterations,
-		// NeuralNetwork.PrintProgress.PRINTPROGRESS);
+		neuralNetwork.Train(trainingInputs, trainingTargets, batchSize, itterations,
+				NeuralNetwork.PrintProgress.PRINTPROGRESS);
+
+		neuralNetwork.PrintNetwork();
 
 		// Testing
 		// neuralNetwork.Test(testingInputs, testingTargets,
