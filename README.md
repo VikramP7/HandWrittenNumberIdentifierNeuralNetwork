@@ -16,6 +16,10 @@ The network is then trained using the gradient decent back propagation model on 
 
 ![Image of Neural Network Testing Results][imgTestResult]
 
+If you want to try it out yourself download the jar and run 
+
+`java -jar HandWrittenNumberIdentifierNeuralNetworkV2.jar` 
+
 ## Architecture
 
 The network comprises of 784 inputs (one for each single channel pixel in the image), two hidden layer one of 32 nodes (after the input layer) and the other of 16 (before the output layer), and 10 outputs (one for each possible value 0 through 9).
